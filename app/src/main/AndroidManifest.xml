@@ -18,10 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".BreedsActivity" />
-        <activity android:name=".DogsActivity"></activity>
-        <activity android:name=".PhotoActivity"></activity>
+        <activity android:name=".mainthings.LoginActivity" />
+        <activity android:name=".mainthings.BreedsActivity" />
+        <activity android:name=".mainthings.DogsActivity"></activity>
+        <activity android:name=".mainthings.PhotoActivity"></activity>
     </application>
 
 </manifest>

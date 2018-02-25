@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import comli.example.c4q.testing.LoginActivity;
+import comli.example.c4q.testing.mainthings.LoginActivity;
 import comli.example.c4q.testing.R;
 
 public class SplashDog extends AppCompatActivity {

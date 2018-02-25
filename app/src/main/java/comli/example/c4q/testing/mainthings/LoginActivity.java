@@ -1,4 +1,4 @@
-package comli.example.c4q.testing;
+package comli.example.c4q.testing.mainthings;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import comli.example.c4q.testing.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -28,15 +30,15 @@ public class LoginActivity extends AppCompatActivity {
         submit = findViewById(R.id.submit);
         sharedPreferences = getSharedPreferences(SHARED_PREF_KEY,MODE_PRIVATE);
 
-        Intent intentLogout = getIntent();
-        if (!sharedPreferences.getString("username", "").equals("") && !sharedPreferences.getString("password", "").equals("") && !intentLogout.getBooleanExtra("logout", false)){
-            Intent intent = new Intent(LoginActivity.this, BreedsActivity.class);
-            startActivity(intent);
-            Log.d(TAG, "onCreate: Logging back into breeds activity");
-        }else {
-            username.setText("");
-            password.setText("");
-        }
+//        Intent intentLogout = getIntent();
+//        if (!sharedPreferences.getString("username", "").equals("") && !sharedPreferences.getString("password", "").equals("") && !intentLogout.getBooleanExtra("logout", false)){
+//            Intent intent = new Intent(LoginActivity.this, BreedsActivity.class);
+//            startActivity(intent);
+//            Log.d(TAG, "onCreate: Logging back into breeds activity");
+//        }else {
+//            username.setText("");
+//            password.setText("");
+//        }
 
 
         submit.setOnClickListener(new View.OnClickListener() {

@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:background="#FFFF00"
 
-    tools:context="comli.example.c4q.testing.LoginActivity">
+    tools:context="comli.example.c4q.testing.mainthings.LoginActivity">
 
 
     <EditText

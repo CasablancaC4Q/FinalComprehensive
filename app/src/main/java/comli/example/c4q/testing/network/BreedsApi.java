@@ -10,12 +10,12 @@ import retrofit2.http.Path;
  * Created by c4q on 2/25/18.
  */
 
-public class BreedsApi {
+public interface BreedsApi {
 
     @GET("{breed}/images/random")
     Call<Breed> getBreed(@Path("breed") String breed);
 
-    @GET("https://dog.ceo/api/breed/{breed}/images")
+    @GET("{breed}/images")
     Call<BreedPiclIST> getList(@Path("breed") String breed);
 }
 

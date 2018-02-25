@@ -1,4 +1,4 @@
-package comli.example.c4q.testing;
+package comli.example.c4q.testing.mainthings;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 
 import com.squareup.picasso.Picasso;
 
+import comli.example.c4q.testing.R;
 import comli.example.c4q.testing.model.Breed;
 import comli.example.c4q.testing.network.BreedsApi;
 import retrofit2.Call;
@@ -21,7 +22,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class BreedsActivity extends AppCompatActivity {
+public class BreedsActivity extends AppCompatActivity implements View.OnClickListener {
 
     private SharedPreferences sharedPreferences;
     private Breed breed;

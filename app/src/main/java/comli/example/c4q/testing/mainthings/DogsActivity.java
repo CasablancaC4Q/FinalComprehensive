@@ -1,4 +1,4 @@
-package comli.example.c4q.testing;
+package comli.example.c4q.testing.mainthings;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -12,7 +12,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import comli.example.c4q.testing.controller.BreedAdapter;
+import comli.example.c4q.testing.R;
+import comli.example.c4q.testing.adapter.BreedAdapter;
 import comli.example.c4q.testing.model.BreedPiclIST;
 import comli.example.c4q.testing.network.BreedsApi;
 import retrofit2.Call;

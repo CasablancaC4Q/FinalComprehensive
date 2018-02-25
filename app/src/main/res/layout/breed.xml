@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFC0CB"
-    tools:context="comli.example.c4q.testing.BreedsActivity">
+    tools:context="comli.example.c4q.testing.mainthings.BreedsActivity">
 
     <TextView
         android:id="@+id/welcome_header"

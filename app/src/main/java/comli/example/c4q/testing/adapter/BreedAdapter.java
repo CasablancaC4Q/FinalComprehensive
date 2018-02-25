@@ -1,4 +1,4 @@
-package comli.example.c4q.testing.controller;
+package comli.example.c4q.testing.adapter;
 
 /**
  * Created by c4q on 2/25/18.
@@ -15,7 +15,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import comli.example.c4q.testing.PhotoActivity;
+import comli.example.c4q.testing.mainthings.PhotoActivity;
 import comli.example.c4q.testing.R;
 
 public class BreedAdapter extends RecyclerView.Adapter<BreedAdapter.ViewHolder> {
