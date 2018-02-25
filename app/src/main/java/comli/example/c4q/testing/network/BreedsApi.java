@@ -1,6 +1,7 @@
 package comli.example.c4q.testing.network;
 
 import comli.example.c4q.testing.model.Breed;
+import comli.example.c4q.testing.model.BreedPiclIST;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -10,10 +11,11 @@ import retrofit2.http.Path;
  */
 
 public class BreedsApi {
-    @GET("{breed}/images/random")
-    Call<Breed> getBreed(@Path("breed") String breed) {
-        return null;
 
-    }
+    @GET("{breed}/images/random")
+    Call<Breed> getBreed(@Path("breed") String breed);
+
+    @GET("https://dog.ceo/api/breed/{breed}/images")
+    Call<BreedPiclIST> getList(@Path("breed") String breed);
 }
 
