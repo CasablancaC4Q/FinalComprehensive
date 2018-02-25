@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Login);
+        setContentView(R.layout.login);
 
 
         username = findViewById(R.id.username);
@@ -70,3 +70,5 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 }
+
+
