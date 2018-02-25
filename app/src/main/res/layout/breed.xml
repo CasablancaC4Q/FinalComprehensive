@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFC0CB"
+    android:background="#2A433A"
     tools:context="comli.example.c4q.testing.mainthings.BreedsActivity">
 
     <TextView
@@ -15,6 +15,8 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_header_string"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
 
         android:textSize="25sp" />
 
@@ -36,7 +38,7 @@
                 android:id="@+id/terrier_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFC0CB"
+                android:background="#2A433A"
                 android:orientation="horizontal">
 
                 <TextView
@@ -72,7 +74,7 @@
             <LinearLayout
                 android:id="@+id/spaniel_layout"
                 android:layout_width="match_parent"
-                android:background="#FFC0CB"
+                android:background="#2A433A"
 
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -110,7 +112,7 @@
                 android:id="@+id/retriever_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFC0CB"
+                android:background="#2A433A"
 
                 android:orientation="horizontal">
 
@@ -147,7 +149,7 @@
                 android:id="@+id/poodle_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFC0CB"
+                android:background="#2A433A"
 
                 android:orientation="horizontal">
 
