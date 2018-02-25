@@ -14,7 +14,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
     private static final String TAG = "LoginActivity";
-    private short aShort;
     private EditText username, password;
     private Button submit;
     public static final String SHARED_PREF_KEY = "goto_login_activity";
@@ -24,16 +23,19 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
-
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         submit = findViewById(R.id.submit);
-        sharedPreferences = getSharedPreferences(SHARED_PREF_KEY, MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences(SHARED_PREF_KEY,MODE_PRIVATE);
 
-        if (!sharedPreferences.getString("username", "").equals("") && !sharedPreferences.getString("password", "").equals("")) {
+        Intent intentLogout = getIntent();
+        if (!sharedPreferences.getString("username", "").equals("") && !sharedPreferences.getString("password", "").equals("") && !intentLogout.getBooleanExtra("logout", false)){
             Intent intent = new Intent(LoginActivity.this, BreedsActivity.class);
             startActivity(intent);
+            Log.d(TAG, "onCreate: Logging back into breeds activity");
+        }else {
+            username.setText("");
+            password.setText("");
         }
 
 
@@ -62,13 +64,12 @@ public class LoginActivity extends AppCompatActivity {
                     editor.putString("password", password.getText().toString());
                     editor.commit();
 
-                    Intent intent = new Intent(LoginActivity.this, BreedsActivity.class);
+                    Intent intent = new Intent(LoginActivity.this,BreedsActivity.class);
                     startActivity(intent);
+                    Log.d(TAG, "onClick: went to BreedsAvtivity first Time");
 
                 }
             }
         });
     }
 }
-
-

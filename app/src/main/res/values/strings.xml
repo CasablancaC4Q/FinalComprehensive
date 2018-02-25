@@ -3,4 +3,9 @@
     <string name="user_name">UserName baby</string>
     <string name="password">Secret PassWord For Us Boo</string>
     <string name="submit_login">Lets Do it I love DOGS! URFF URFF</string>
+    <string name="welcome_header_string">Hey Love</string>
+    <string name="terrier">Terrier</string>
+    <string name="spaniel">Spaniel</string>
+    <string name="retriever">Retriever</string>
+    <string name="poodle">Poodle</string>
 </resources>
